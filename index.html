@@ -7,274 +7,143 @@
     <link rel="stylesheet" href="style-index.css">
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src='script-index.js'></script>
     <title>H4FA</title>
 </head>
 <body>
+    <div class="container">
+        <section class="background">
+          <div class="content-wrapper">
+            <p class="content-title">    <video autoplay muted loop id="myVideo">
+                <source src="drone.mp4" type="video/mp4">
+              </video>
+          
+              <div class='section1'>
+          
+                <h1 id='fade' class='h4fa' style='font-size:76px;'>H4FA</h1>
+                <h2 id='fade' style='font-size:40px;'>Help for Forgotten Allies</h2>
+          
+              </div>
+</p>
+            <p class="content-subtitle">Scroll down and up to see the effect!</p>
+          </div>
+        </section>
+        <section class="background">
+          <div class="content-wrapper">
+            <p class="content-title">  <div class='about'>
+                <div class='text'>
+                    <h2 class='we' style='padding-top:100px; padding-bottom:20px; color:#000000;'>We are H4FA</h2>
+                    <h3 style='font-size: 1.2rem; padding-left:18vw; padding-right:18vw;'>Our work is focused on supporting veterans from the Second World War, 
+                        who fought with the British, and also the 120,000 refugees, mainly from the Karen and Karenni ethnic groups, 
+                        living in the nine overcrowded camps strung out along the Thai-Burma border.</h3>
+                </div>
+              </div></p>
+          </div>
+        </section>
+        <section class="background">
+          <div class="content-wrapper">
+            <p class="content-title"><div class='helped'>
 
-  
-
-  <section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <a href="#!">H4FA</a>
+                <h2>These are just some of the people we've helped.</h2>
+            
+              </div>
+            
+              <div id="gallery">
+                <div><img src="e1.jpg" /><a href="#lightbox-1">512</a></div>
+                <div> <img src="e2.jpg" /><a href="#lightbox-2">513</a></div>
+                <div><img src="e3.jpg" /><a href="#lightbox-3">514</a></div>
+                <div><img src="e4.jpg" /><a href="#lightbox-4">515</a></div>
+                <div><img src="e5.jpg" /><a href="#lightbox-5">516</a></div>
+                <div><img src="e6.jpg" /><a href="#lightbox-6">517</a></div>
+                <div><img src="e7.jpg" /><a href="#lightbox-7">518</a></div>
+                <div><img src="e8.jpg" /><a href="#lightbox-8">519</a></div>
+                <div><img src="e9.jpg" /><a href="#lightbox-9">520</a></div>
+                <div><img src="e10.jpg" /><a href="#lightbox-10">521</a></div>
+                <div><img src="e11.jpg" /><a href="#lightbox-11">522</a></div>
+                <div><img src="e12.jpg" /><a href="#lightbox-12">523</a></div>
+                <div><img src="e13.jpg" /><a href="#lightbox-13">524</a></div>
+                <div><img src="e14.jpg" /><a href="#lightbox-14">525</a></div>
+                <div><img src="e15.jpg" /><a href="#lightbox-15">526</a></div>
+                <div><img src="e16.jpg" /><a href="#lightbox-16">527</a></div>
+                <div><img src="e17.jpg" /><a href="#lightbox-17">528</a></div>
+                <div><img src="e18.jpg" /><a href="#lightbox-18">529</a></div>
+            </div>
+            <div class="lightbox" id="lightbox-1">
+                <div class="content"><img src="e1.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-2">
+                <div class="content"><img src="e2.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-3">
+                <div class="content"><img src="e3.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-4">
+                <div class="content"><img src="e4.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-5">
+                <div class="content"><img src="e5.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-6">
+                <div class="content"><img src="e6.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-7">
+                <div class="content"><img src="e7.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-8">
+                <div class="content"><img src="e8.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-9">
+                <div class="content"><img src="e9.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-10">
+                <div class="content"><img src="e10.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-11">
+                <div class="content"><img src="e11.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-12">
+                <div class="content"><img src="e12.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-13">
+                <div class="content"><img src="e13.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-14">
+                <div class="content"><img src="e14.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-15">
+                <div class="content"><img src="e15.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-16">
+                <div class="content"><img src="e16.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-17">
+                <div class="content"><img src="e17.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div>
+            <div class="lightbox" id="lightbox-18">
+                <div class="content"><img src="e18.jpg" />
+                    <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
+            </div></p>
+          </div>
+        </section>
       </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="#!">Home</a>
-          </li>
-          <li>
-            <a href="#!">Forgotten Allies</a>
-          </li>
-          <li>
-            <a href="#!">Emmanuel School</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="#!">test</a>
-              </li>
-              <li>
-                <a href="#!">test</a>
-              </li>
-              <li>
-                <a href="#!">test</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">Care Villa</a>
-          </li>
-          <li>
-            <a href="#!">Karen Bible College</a>
-            <ul class="nav-dropdown">
-              <li>
-                <a href="#!">test</a>
-              </li>
-              <li>
-                <a href="#!">test</a>
-              </li>
-              <li>
-                <a href="#!">test</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">About Us</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-
-    <video autoplay muted loop id="myVideo">
-      <source src="drone.mp4" type="video/mp4">
-    </video>
-
-    <div class='section1'>
-
-      <h1 id='fade' class='h4fa' style='font-size:76px;'>H4FA</h1>
-      <h2 id='fade' style='font-size:40px;'>Help for Forgotten Allies</h2>
-
-    </div>
-
-    <div class='section1v2'>
-
-
-      <button id="myBtn" onclick="pause()">Pause</button>
-
-      
-    </div>
-
-  <div class='about'>
-    <div class='text'>
-        <h2 class='we' style='padding-top:100px; padding-bottom:20px; color:#000000;'>We are H4FA</h2>
-        <h3 style='font-size: 1.2rem; padding-left:18vw; padding-right:18vw;'>Our work is focused on supporting veterans from the Second World War, 
-            who fought with the British, and also the 120,000 refugees, mainly from the Karen and Karenni ethnic groups, 
-            living in the nine overcrowded camps strung out along the Thai-Burma border.</h3>
-    </div>
-  </div>
-
-  <div class='helped'>
-
-    <h2>These are just some of the people we've helped.</h2>
-
-  </div>
-
-  <div id="gallery">
-    <div><img src="e1.jpg" /><a href="#lightbox-1">512</a></div>
-    <div> <img src="e2.jpg" /><a href="#lightbox-2">513</a></div>
-    <div><img src="e3.jpg" /><a href="#lightbox-3">514</a></div>
-    <div><img src="e4.jpg" /><a href="#lightbox-4">515</a></div>
-    <div><img src="e5.jpg" /><a href="#lightbox-5">516</a></div>
-    <div><img src="e6.jpg" /><a href="#lightbox-6">517</a></div>
-    <div><img src="e7.jpg" /><a href="#lightbox-7">518</a></div>
-    <div><img src="e8.jpg" /><a href="#lightbox-8">519</a></div>
-    <div><img src="e9.jpg" /><a href="#lightbox-9">520</a></div>
-    <div><img src="e10.jpg" /><a href="#lightbox-10">521</a></div>
-    <div><img src="e11.jpg" /><a href="#lightbox-11">522</a></div>
-    <div><img src="e12.jpg" /><a href="#lightbox-12">523</a></div>
-    <div><img src="e13.jpg" /><a href="#lightbox-13">524</a></div>
-    <div><img src="e14.jpg" /><a href="#lightbox-14">525</a></div>
-    <div><img src="e15.jpg" /><a href="#lightbox-15">526</a></div>
-    <div><img src="e16.jpg" /><a href="#lightbox-16">527</a></div>
-    <div><img src="e17.jpg" /><a href="#lightbox-17">528</a></div>
-    <div><img src="e18.jpg" /><a href="#lightbox-18">529</a></div>
-</div>
-<div class="lightbox" id="lightbox-1">
-    <div class="content"><img src="e1.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-2">
-    <div class="content"><img src="e2.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-3">
-    <div class="content"><img src="e3.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-4">
-    <div class="content"><img src="e4.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-5">
-    <div class="content"><img src="e5.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-6">
-    <div class="content"><img src="e6.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-7">
-    <div class="content"><img src="e7.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-8">
-    <div class="content"><img src="e8.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-9">
-    <div class="content"><img src="e9.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-10">
-    <div class="content"><img src="e10.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-11">
-    <div class="content"><img src="e11.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-12">
-    <div class="content"><img src="e12.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-13">
-    <div class="content"><img src="e13.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-14">
-    <div class="content"><img src="e14.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-15">
-    <div class="content"><img src="e15.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-16">
-    <div class="content"><img src="e16.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-17">
-    <div class="content"><img src="e17.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-<div class="lightbox" id="lightbox-18">
-    <div class="content"><img src="e18.jpg" />
-        <div class="title">Emmanuel <b>512</b> School</div><a class="close" href="#gallery"></a></div>
-</div>
-
-
-<div class='panels'>
-
-    <h1>Our current projects</h1>
-
-    <div class='space1'>
-
-      <div class='panel1'>
-
-        <img src="e7.jpg" alt="Forgotten Allies">
-        <h1 style='padding-top:50px;'>Forgotten Allies</h1>
-        <p>Forgotten Allies description</p>
-
-      </div>
-
-    </div>
-
-    <div class='space2'>
-
-      <div class='panel2'>
-
-        <img src="e7.jpg" alt="Emmanuel School">
-        <h1 style='padding-top:50px;'>Emmanuel School</h1>
-        <p>Emmanuel School description</p>
-        
-      </div>
-
-    </div>
-
-    <div class='space3'>
-
-      <div class='panel3'>
-
-        <img src="e7.jpg" alt="Care Villa">
-        <h1 style='padding-top:50px;'>Care Villa</h1>
-        <p>Care Villa description</p>
-        
-      </div>
-
-    </div>
-
-</div>
-
-
-<div class='contact'>
-
-    <h1>Get in touch</h1>
-    <h3>You can send donations/letters to this address:</h3>
-
-</div>
-
-<div class='footer'>
-
-  <footer class="footer-basic-centered">
-
-    <p class="footer-company-motto">We help the forgotten.</p>
-
-    <p class="footer-links">
-      <a href="#">Home</a>
-      ·
-      <a href="#">Forgotten Allies</a>
-      ·
-      <a href="#">Emmanuel School</a>
-      ·
-      <a href="#">Care Villa</a>
-      ·
-      <a href="#">Karen Bible College</a>
-      ·
-      <a href="#">About Us</a>
-    </p>
-
-    <p class="footer-company-name">Website designed and built by <a style='text-decoration: none; color:#8f9296;' target='_blank' href="https://www.techupwebdesign.com/">TechUp</a></p>
-
-  </footer>
-
-</div>
-
-
-<script src='script-index.js'></script>
-
 
 </body>
-
 </html>
